@@ -1,0 +1,12 @@
+p {
+    margin: 40px;
+    padding: 20px;
+}
+
+.fundo-padrao {
+    background-color: #F5F5F5;
+}
+
+.fundo-colorido {
+    background-color: #F0CCE2;
+}
