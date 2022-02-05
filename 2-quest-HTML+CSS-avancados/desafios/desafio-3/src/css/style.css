@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+html{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+body{
+    background-color: #F7F7F7;
+}
+
+
+/* LAYOUT */
+
+.container{
+    display: grid;
+    grid: "main-content related-content";
+    margin: 20px;
+}
+
+.main-content{
+    grid-area: main-content;
+}
+
+.related-content{
+    grid-area: related-content;
+}
+
+.related-videos{
+    display: grid;
+    grid: "video-display video-info";
+}
+
+.video-display{
+    grid-area: video-display;
+}
+
+.video-info{
+    grid-area: video-info;
+}
+
+
+ /* MAIN CONTENT */
+
+.container .main-content{
+    width: 330px;
+}
+
+.container .main-content .main-content-description{
+    margin: 10px auto;
+}
+
+.container .main-content .main-content-description h1{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.container .main-content .main-content-description h2,
+.container .main-content .main-content-description p{
+    font-size: 11px;
+    font-weight: 300;
+    margin: 10px auto;
+}
+
+
+ /* RELATED-CONTENT */
+
+.container .related-content{
+    width: 270px;
+}
+
+.container .related-content .add{
+    width: 270px;
+    height: 60px;
+    background: url(http://via.placeholder.com/270x60);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container .related-content .related-videos{
+    margin: 15px auto;
+}
+
+.container .related-content .related-videos .video-info h2{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.container .related-content .related-videos .video-info h3,
+.container .related-content .add h2{
+    font-size: 11px;
+    font-weight: 300;
+}
+
+.container .related-content .related-videos .video-info h3{
+    margin-bottom: 5px;
+}

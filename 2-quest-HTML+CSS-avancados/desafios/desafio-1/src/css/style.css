@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;800&display=swap');
+
+html{
+    font-family: 'Public Sans', sans-serif;
+    font-size: 15px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo{
+    display: flex;
+    justify-content: flex-start;
+    margin: 40px 55px;
+}
+
+.header .logo img{
+    width: 50px;
+}
+
+.header .logo h1{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.header .logo a{
+    display: flex;
+    align-items: center; 
+}
+
+.header .menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 41px 75px;
+}
+.header .menu a{
+    padding: 10px 12px 10px 12px;
+    margin: 5px;
+    transition: 0.3s ease-in-out;
+    font-weight: 400;
+}
+
+.header .menu a:hover{
+    background-color: #5BC241;
+    color: white;
+}
+.header .menu nav ul{
+    display: flex;
+}
+
+.header .menu .btn-sign-up{
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #5BC241;
+    color: white;
+    margin-left: 30px;
+    font-weight: 300;
+}
+
+@media (max-width: 375px){
+    .header, .header .menu,
+    .header .menu nav ul{
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .header .logo{
+        margin-top: 45px;
+        justify-content: center;
+    }
+
+    .header .logo h1{
+        font-size: 40px;
+    }
+
+    .header .menu nav ul{
+        align-items: center;
+    }
+
+    .header .menu nav ul li{
+        margin: 20px;
+    }
+    
+    .header .menu a{
+        font-size: 40px;
+        padding: 20px 50px;
+    }
+
+    .header .menu .btn-sign-up {
+        margin-top: 50px;
+        margin-left: 0;
+    }
+}
