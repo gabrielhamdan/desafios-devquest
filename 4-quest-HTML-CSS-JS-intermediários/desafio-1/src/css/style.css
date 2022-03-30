@@ -1,0 +1,83 @@
+.image-container {
+    display: flex;
+    position: relative;
+}
+
+.image {
+    display: none;
+    align-items: center;
+}
+
+.active {
+    display: flex;
+}
+
+.image img {
+    position: relative;
+}
+
+.image-container .image-text {
+    background-color: white;
+    width: 35%;
+    height: fit-content;
+    margin: 80px 0 80px 200px;
+    padding: 65px 60px;
+    position: absolute;
+}
+
+.image-container .image-text h2 {
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.image-container .image-text p {
+    padding: 10% 0 5% 0;
+    font-size: 25px;
+}
+
+.image-container .image-text a {
+    font-weight: 700;
+    font-size: 30px;
+    color: #C50000;
+}
+
+@media (max-width: 1700px) {
+    .image-container .image-text h2 {
+        font-weight: 400;
+        font-size: 3vw;
+    }
+    
+    .image-container .image-text p {
+        padding: 10% 0 5% 0;
+        font-size: 1vw;
+    }
+    
+    .image-container .image-text a {
+        font-weight: 700;
+        font-size: 1.5vw;
+        color: #C50000;
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 35px;
+}
+
+.buttons img {
+    width: 50px;
+}
+
+.btn.left {
+    transform: scaleX(-1);
+}
+
+.disabled {
+    opacity: 0.5;
+}

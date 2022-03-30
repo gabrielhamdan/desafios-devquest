@@ -1,0 +1,75 @@
+body {
+    background-color: #e5e5e5;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content .card {
+    background-color: white;
+    border-radius: 20px;
+    width: 650px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.card .logo {
+    width: 280px;
+    position: absolute;
+    left: -100px;
+}
+
+.faq {
+    margin: 60px 40px 60px 250px;
+}
+
+.faq h1 {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.faq img {
+    width: 15px;
+    height: 8px;
+}
+
+.question-container .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.question-container.middle {
+    border-top: 1px solid #D4D4D4;
+    border-bottom: 1px solid #D4D4D4;
+}
+
+.question h2 {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.answer p {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.answer {
+    display: none;
+}
+
+.question-container.toggled img  {
+        content: url("../images/seta-colorida.png");
+}
+    
+.question-container.toggled .answer {
+        display: flex;
+}
