@@ -3,7 +3,7 @@ document.querySelectorAll(".button").forEach(item => {
 });
 
 function toggleAnswer() {
-    let toggled = document.querySelector(".toggled");
+    const toggled = document.querySelector(".toggled");
     
     if (this.parentElement.parentElement != toggled) {
         toggled.classList.remove("toggled")
