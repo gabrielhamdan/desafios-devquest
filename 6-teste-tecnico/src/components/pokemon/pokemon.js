@@ -1,9 +1,15 @@
-const Pokemon = ({pokemon}) => {
+import { Link } from 'react-router-dom'
+
+const Pokemon = ({ pokemon }) => {
     return (
-        <li>
-            <img src={pokemon.sprites.front_default} alt={pokemon.name} />
-            {pokemon.name}
-        </li>
+        <Link to={`pokemon/${pokemon.name}`}>
+            <li>
+                <img src={pokemon.sprites.front_default} alt={pokemon.name} />
+                <p>
+                    {pokemon.name}
+                </p>
+            </li>
+        </Link>
     );
 }
 

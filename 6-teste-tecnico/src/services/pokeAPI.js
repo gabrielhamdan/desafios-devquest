@@ -20,4 +20,4 @@ async function fetchPokemon(url) {
     return await data;
 }
 
-export { loadPokemons };
+export { loadPokemons, fetchPokemon };

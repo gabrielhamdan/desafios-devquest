@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { loadPokemons } from "../../services/pokeAPI";
 import Pokemon from "../pokemon/pokemon";
-import Button from '../button/button'
+import Button from '../button/button';
 
 const PokeDisplay = () => {
     const [display, setDisplay] = useState({
@@ -21,8 +21,9 @@ const PokeDisplay = () => {
     }, []);
 
     const morePokemon = async () => {
+        //refatorar nomenclatura getMorePokemon
         const moreTenPokemon = await loadPokemons(1);
-        
+
         setDisplay({
             pokemons: [...display.pokemons, ...moreTenPokemon]
         });

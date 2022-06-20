@@ -1,10 +1,10 @@
 import './App.css';
-import PokeDisplay from './components/pokeDisplay/pokeDisplay'
+import AppRoutes from './pages/routes'
 
 function App() {
   return (
     <div className="App">
-      <PokeDisplay />
+      <AppRoutes />
       {console.log("A wild user appears!")}
     </div>
   );
