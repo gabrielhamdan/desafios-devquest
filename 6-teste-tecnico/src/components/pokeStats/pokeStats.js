@@ -5,6 +5,8 @@ import styled from "styled-components";
 
 const PokeStats = () => {
     const [pokemonStats, setStats] = useState({});
+    const [abilities, setAbility] = useState([])
+
     const { name } = useParams();
 
     useEffect(() => {
@@ -12,7 +14,17 @@ const PokeStats = () => {
             const data = await fetchPokemon(`https://pokeapi.co/api/v2/pokemon/${name}`);
 
             setStats(data);
+
+            const abilitiesPromises = await data.abilities.map(async ability => {
+                const response = await fetch(ability.ability.url)
+                return await response.json();
+            });
+
+            const abilitiesDescription = await Promise.all(abilitiesPromises)
+                .then(value => value);
+            setAbility(abilitiesDescription);
         }
+
         fetchData();
     }, []);
 
@@ -43,8 +55,8 @@ const PokeStats = () => {
                         <Stats>
                             <h3>Abilities</h3>
                             <Values>
-                                {pokemonStats.abilities.map((ability, index) => {
-                                    return <ListItems key={index}>{ability.ability.name + ": "}</ListItems>
+                                {abilities.map((ability, index) => {
+                                    return <ListItems key={index}>{ability.name + ": " + ability.flavor_text_entries[0].flavor_text}</ListItems>
                                 })}
                             </Values>
                         </Stats>

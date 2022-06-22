@@ -1,15 +1,17 @@
 import AppRoutes from './pages/routes'
 import styled, { createGlobalStyle } from 'styled-components';
+import { ThemeProvider } from './contexts/theme-context';
 
 function App() {
   return (
     <>
-      <GlobalStyle />
-        
+      <ThemeProvider>
+        <GlobalStyle />
         <Container>
           <AppRoutes />
           {console.log("A wild user appears!")}
         </Container>
+      </ThemeProvider>
     </>
   );
 }

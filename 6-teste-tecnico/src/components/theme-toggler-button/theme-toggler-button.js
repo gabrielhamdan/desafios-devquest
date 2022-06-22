@@ -6,6 +6,6 @@ export const ThemeTogglerButton = () => {
     const { theme, setTheme } = useContext(ThemeContext);
 
     return (
-            <Button onClick={() => setTheme(theme === themes.light ? themes.dark : themes.light)}/>
+            <Button label={theme === themes.light ? "red" : "white"} onClick={() => setTheme(theme === themes.light ? themes.dark : themes.light)}/>
     )
 }
