@@ -1,31 +1,29 @@
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
-
+![Logo](https://user-images.githubusercontent.com/74621925/175611364-e2d90132-0d0e-4bc2-bf80-55775e1f5656.png)
 
 Uma breve descrição sobre o que esse projeto faz e para quem ele é
 
 
-## Funcionalidades
+## 🏷 Funcionalidades
 
 - Temas dark e light
-- Preview em tempo real
-- Modo tela cheia
-- Multiplataforma
+- SPA
+- Design responsivo
 
 
-## Screenshots
+## 📷 Screenshots
 
 ![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
 
 
 ## 🛠 Tecnologias utilizadas
 <p>
-   <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-   <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-   <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+   <img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+   <img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+   <img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
 </p>
 
 
-## Rodando localmente
+## 💻 Rodando localmente
 
 Clone o projeto
 
