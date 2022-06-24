@@ -9,9 +9,9 @@ function App() {
         <GlobalStyle />
         <Container>
           <AppRoutes />
-          {console.log("A wild user appears!")}
         </Container>
       </ThemeProvider>
+      {console.log("A wild user appears!")}
     </>
   );
 }
@@ -22,14 +22,6 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     font-family: 'Press Start 2P', cursive;
   }
-
-html {
-  height: 100%;
-}
-
-body {
-  min-height: 100vh;
-}
 
 a {
     text-decoration: none;

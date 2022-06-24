@@ -1,10 +1,6 @@
-let nextPokemons;
-
-async function loadPokemons(pokeDisplay) {
-    const response = await fetch(pokeDisplay == null ? 'https://pokeapi.co/api/v2/pokemon/?limit=10&offset=10' : nextPokemons);
+async function loadPokemons(offset) {
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/?limit=10&offset=${offset}`);
     const data = await response.json();
-
-    nextPokemons = data.next;
 
     let pokemons = data.results.map(async (pokemon) => {
         return await fetchPokemon(pokemon.url);

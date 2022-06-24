@@ -9,25 +9,23 @@ const PokeDisplay = () => {
         pokemons: []
     });
 
+    const pokemonsPerLoad = 10;
+    const [offset, setOffset] = useState(0);
+
     useEffect(() => {
         const fetchData = async () => {
-            const loadTenPokemons = await loadPokemons();
+            const loadTenPokemons = await loadPokemons(offset);
 
             setDisplay({
-                pokemons: loadTenPokemons
+                pokemons: [...display.pokemons, ...loadTenPokemons]
             });
         }
 
         fetchData();
-    }, []);
+    }, [offset]);
 
     const morePokemon = async () => {
-        //refatorar nomenclatura getMorePokemon
-        const moreTenPokemon = await loadPokemons(1);
-
-        setDisplay({
-            pokemons: [...display.pokemons, ...moreTenPokemon]
-        });
+        setOffset(offset + pokemonsPerLoad);
     }
 
     return (
@@ -60,6 +58,12 @@ const PokeList = styled.ul`
     justify-content: center;
     grid-gap: 10px;
     margin: 15px;
+
+    @media(max-width: 800px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
+        margin: 10px;
+    }
 `
 
 export default PokeDisplay;

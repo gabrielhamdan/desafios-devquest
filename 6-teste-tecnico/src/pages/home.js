@@ -32,6 +32,7 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-self: center;
+    min-width: 80%;
 `
 
 const BtnContainer = styled.div`

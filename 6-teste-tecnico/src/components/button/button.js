@@ -1,10 +1,7 @@
-import React, { useContext } from "react";
+import React from "react";
 import styled from "styled-components";
-import { ThemeContext } from "../../contexts/theme-context";
 
 const Button = (props) => {
-    const { theme } = useContext(ThemeContext);
-
     return (
         <Btn {...props}>{props.label}</Btn>
         );
