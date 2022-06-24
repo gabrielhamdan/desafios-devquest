@@ -1,9 +1,9 @@
 ![Logo](https://user-images.githubusercontent.com/74621925/175611364-e2d90132-0d0e-4bc2-bf80-55775e1f5656.png)
 
-Uma breve descrição sobre o que esse projeto faz e para quem ele é
+Esta **Pokédex** exibe centenas de pokémons e seus respectivos stats por meio da [PokéAPI](https://pokeapi.co/)! 
 
 
-## 🏷 Funcionalidades
+## ⚙ Funcionalidades
 
 - Temas dark e light
 - SPA
@@ -12,7 +12,24 @@ Uma breve descrição sobre o que esse projeto faz e para quem ele é
 
 ## 📷 Screenshots
 
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+<table>
+   <tr>
+      <td>
+         <img src="https://user-images.githubusercontent.com/74621925/175657481-e3e1b111-3a95-4dec-acf6-0677768093fe.gif" width="100%">
+      </td>
+      <td>
+         <img src="https://user-images.githubusercontent.com/74621925/175657623-bfac1434-b88b-4641-8d17-d12011039534.gif" width="100%">
+      </td>
+   </tr>
+   <tr>
+      <td>
+         <img src="https://user-images.githubusercontent.com/74621925/175657739-fcc291c3-4190-49a9-9473-da4fff1e0061.gif" width="100%">
+      </td>
+      <td>
+         <img src="https://user-images.githubusercontent.com/74621925/175657763-ca2f8541-60ed-4d2d-a5d6-8dab118939a8.gif" width="100%">
+      </td>
+</table>
+   
 
 
 ## 🛠 Tecnologias utilizadas
@@ -20,6 +37,9 @@ Uma breve descrição sobre o que esse projeto faz e para quem ele é
    <img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
    <img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
    <img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+</p>
+<p>
+   Xxx.
 </p>
 
 
@@ -46,5 +66,5 @@ Instale as dependências
 Inicie o servidor
 
 ```bash
-  npm run start
+  npm start
 ```
